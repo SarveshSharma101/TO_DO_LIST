@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:background="#FFD369"
+        app:cardBackgroundColor="#FFD369"
+        android:elevation="8dp"
+        android:paddingLeft="16dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABCD04"
+            android:fontFamily="@font/warmheart"
+
+            android:textSize="40dp"
+            android:elevation="3dp"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="start">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABCD04"
+            android:fontFamily="@font/warmheart"
+
+            android:textSize="40dp"
+            android:elevation="3dp"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:layout_marginTop="100dp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="start">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

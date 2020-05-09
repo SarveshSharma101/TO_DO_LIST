@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_newTask"
+    android:paddingTop="16dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edit_task"
+        android:hint="Enter Your task here..."
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/rc_text_bg1"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textClock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textClock"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="80dp"
+        android:text="52145"
+        android:textSize="32dp"
+        android:paddingTop="56dp"
+        android:elevation="4dp"
+        android:background="@drawable/circlebg"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/task_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/task_date"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rc_text_bg3"
+        android:elevation="4dp"
+        android:text="45"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/deadline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Set Deadline for the task"
+        android:textSize="16dp"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linear_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/task_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFE7AD"
+            android:textStyle="bold"
+            android:fontFamily="@font/pristina"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:textSize="32dp"
+            android:text="Cancel">
+
+        </Button>
+
+        <Button
+            android:id="@+id/task_save"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFE7AD"
+            android:textStyle="bold"
+            android:fontFamily="@font/pristina"
+            android:layout_weight="1"
+            android:textSize="32dp"
+            android:textAllCaps="false"
+            android:text="Save">
+
+        </Button>
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

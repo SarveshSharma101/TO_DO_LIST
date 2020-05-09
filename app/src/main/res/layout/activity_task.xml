@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    tools:context=".Task">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey Folk"
+        android:fontFamily="@font/pristina"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:background="@drawable/rc_text_bg1"
+        android:textSize="32dp"
+        android:elevation="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is your to-do list!!"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/name"/>
+
+    <GridView
+        android:id="@+id/task_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="24dp"
+       android:verticalSpacing="24dp"
+        android:layout_marginTop="24dp"
+        android:numColumns="2"
+        android:layout_below="@+id/content"
+        >
+    </GridView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/task_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#fff"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="ExtraText,VectorDrawableCompat">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>
